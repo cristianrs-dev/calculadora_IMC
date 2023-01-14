@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body{
+   /* min-width: 300px;*/
+    width: 300px;
+    margin: auto;
+    background-color: #e7f3e6;
+}
+
+.tela{
+    margin-top: 100px;
+    background-color:#192a56;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border-radius: 15px;
+    padding: 10px;
+}
+.titulo{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.form{
+    margin: auto;
+    margin-top: 15px;
+    padding-bottom: 30px;
+    border: none;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+.form input{
+    color: #718093;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    margin: 10px;
+    text-transform: uppercase;
+}
+#botao{
+    padding-top: 30px;
+    color: white;
+    background-color: #2bd11d;
+    padding: 5px;
+    margin:auto;
+    margin-top: 15px;
+    width: 100px;
+    border-radius:5px;
+    border-color:#2bd11d;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#display{
+    color: black;
+    background-color:white;
+    width: 180px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: larger;
+}
+#emoji{
+    margin: auto;
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: wheat;
+}
