@@ -28,14 +28,18 @@ function classificacaoIMC(){
 let emoji=document.getElementById("emoji")
 let imc = parseFloat(resultadoCalculo())
 
+let muitoAbaixoDoPeso = imc < 17
 let abaixoDoPeso = imc >= 17   && imc <= 18.49 
 let pesoNormal   = imc >= 18.5 && imc <= 24.99 
 let acimaDoPeso  = imc >= 25   && imc <= 29.99 
 let obesidade1   = imc >= 30   && imc <= 34.99 
+let obesidade2   = imc >=35    && imc <= 39.99
+let obesidade3   = imc > 40
 
-
-
-    if(abaixoDoPeso){
+    if(muitoAbaixoDoPeso){
+        emoji.src='img/muitoBaixoPeso.jpg'
+        return imc
+    }else if(abaixoDoPeso){
         emoji.src='img/baixoPeso.jpg'
         return imc
     }else if(pesoNormal){
@@ -45,14 +49,17 @@ let obesidade1   = imc >= 30   && imc <= 34.99
         emoji.src='img/sobrepeso.jpg'
         return imc
     }else if(obesidade1){
-        emoji.src='img/obesidade.jpg'
+        emoji.src='img/obesidade1.jpg'
+        return imc
+    }else if(obesidade2){
+        emoji.src='img/obesidade2.jpg'
+        return imc
+    }else if(obesidade3){
+        emoji.src='img/obesidade3.jpg'
         return imc
     }else{
         console.log("nenhuma metrica")
     }
-
-    
-    
 }
 
 function exibir(){
