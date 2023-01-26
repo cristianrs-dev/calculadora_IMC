@@ -1,18 +1,14 @@
 @charset "UTF-8";
 
-body{
-   /* min-width: 300px;*/
-    width: 300px;
-    margin: auto;
-    background-color: #e7f3e6;
-}
+
 
 .tela{
-    margin-top: 100px;
+    max-width: 350px;
+    min-width: 250px;
+    margin: auto;
+    margin-top: 50px;
     box-sizing: border-box;
     background-color:#192a56;
-    display: flex;
-    flex-direction: column;
     height: auto;
     border-radius: 15px;
     padding: 10px;
@@ -29,12 +25,11 @@ body{
     margin-top: 15px;
     padding-bottom: 30px;
     border: none;
-    width: 190px;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
-    
 }
 .form input{
     color: #718093;
@@ -42,18 +37,17 @@ body{
     border-radius: 2px;
     border: none;
     margin: 10px;
-    text-transform: uppercase;
 }
 #botao{
     padding-top: 30px;
     color: white;
     background-color: #2bd11d;
+    border-color:#2bd11d;
     padding: 5px;
     margin:auto;
     margin-top: 15px;
     width: 100px;
     border-radius:5px;
-    border-color:#2bd11d;
     text-transform: uppercase;
     font-weight: bold;
 }
